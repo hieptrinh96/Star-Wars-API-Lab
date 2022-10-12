@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { getAllStartships } from "../../services/sw-api";
+import { getAllStarships } from "../../services/sw-api";
 const StarshipList = () => {
   const [starships, setStarships] = useState([])
   useEffect(() => {
     const fetchSharshipData = async () => {
-      const starships = await getAllStartships()
+      const starships = await getAllStarships()
       setStarships(starships.results)
     }
     fetchSharshipData()
