@@ -13,7 +13,7 @@ const StarshipList = () => {
   return (
     <>
       {starships.map(starship =>
-        <Link to='/starship' state={{ starship }} key={starship.name}>
+        <Link to='/starships' state={{ starship }} key={starship.name}>
           {starship.name}
         </Link>
       )};

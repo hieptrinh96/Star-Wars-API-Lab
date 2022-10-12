@@ -17,14 +17,8 @@ const StarShipPage = () => {
       <div>
         {shipDetails.name ?
           <>
-            {/* Gotta have the random cat pics... */}
-            <img src="http://theoldreader.com/kittens/320/240/" alt="" />
             <h2>{shipDetails.name}</h2>
-            <div>Hit die: d{shipDetails.hit_die}</div>
-            <h3>Proficiencies:</h3>
-            {shipDetails.proficiencies.map((proficiency) => (
-              <div key={proficiency.index}>{proficiency.name}</div>
-            ))}
+            <h2>{shipDetails.model}</h2>
           </>
           :
           <>
