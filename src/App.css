@@ -32,7 +32,59 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav {
+  text-align: center;
+  background-color: #282c34;
+  color: aliceblue;
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.ship-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.ship {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border: 1px solid black;
+  text-align: center;
+  height: 3.5em;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ship:hover {
+  background-color: grey;
+  color: white;
+}
+
+.detail {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
+
+.home-button {
+  border: 1px solid black;
+  width: auto;
 }

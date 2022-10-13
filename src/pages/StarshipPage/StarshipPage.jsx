@@ -15,16 +15,22 @@ const StarShipPage = () => {
   }, [location.state.starship.url])
   return (
     <>
-      <div>
+      <div className='container'>
         {shipDetails.name ?
           <>
-            <h2>{shipDetails.name}</h2>
-            <h2>{shipDetails.model}</h2>
-            <Link to='/'>Home</Link>
+            <div className='detail'>
+              <p><strong>Ship Name:</strong>{shipDetails.name}</p>
+              <p><strong>Ship Model:</strong>{shipDetails.model}</p>
+              <div className='home-button'>
+                <Link to='/'>Home</Link>
+              </div>
+            </div>
           </>
           :
           <>
-            <p>Loading Class Details...</p>
+            <div className='loading'>
+              <p>Loading Class Details...</p>
+            </div>
           </>
         }
       </div>

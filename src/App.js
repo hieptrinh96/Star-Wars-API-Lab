@@ -3,7 +3,6 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar'
 import StarshipList from './pages/StarshipList/StarshipList'
 import StarShipPage from './pages/StarshipPage/StarshipPage'
-
 function App() {
   return (
     <>
